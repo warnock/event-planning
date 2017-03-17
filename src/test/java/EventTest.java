@@ -52,4 +52,10 @@ public class EventTest {
     assertEquals(5, testEvent.beverageCost());
   }
 
+  @Test
+  public void entertainmentCost_costOfEnteraiment_150() {
+    Event testEvent = new Event(1, "entree", "beer", "music");
+    assertEquals(150, testEvent.entertainmentCost());
+  }
+
 }

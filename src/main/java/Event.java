@@ -48,4 +48,7 @@ public class Event {
     }
     return totalCost;
   }
+  public int entertainmentCost() {
+    return 0;
+  }
 }
