@@ -35,27 +35,32 @@ public class EventTest {
 
   @Test
   public void peopleCost_costOfindividualPeople_5() {
-    Event testEvent = new Event(1, "entree", "beer", "music");
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
     int expected = 5;
     assertEquals(expected, testEvent.peopleCost());
   }
 
   @Test
   public void foodCost_costOfFood_10() {
-    Event testEvent = new Event(1, "entree", "beer", "music");
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
     assertEquals(10, testEvent.foodCost());
   }
 
   @Test
   public void beverageCost_costOfBeverage_10() {
-    Event testEvent = new Event(1, "entree", "beer", "music");
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
     assertEquals(5, testEvent.beverageCost());
   }
 
   @Test
   public void entertainmentCost_costOfEnteraiment_150() {
-    Event testEvent = new Event(1, "entree", "beer", "music");
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
     assertEquals(150, testEvent.entertainmentCost());
   }
 
+  @Test
+  public void totalEventCost_totalCostOfEvent_totalValueOfEvent() {
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
+    assertEquals(170, testEvent.totalEventCost());
+  }
 }

@@ -49,6 +49,15 @@ public class Event {
     return totalCost;
   }
   public int entertainmentCost() {
+    int totalCost = 0;
+    if (getEntertainment().equals("DJ")) {
+      totalCost = 150;
+    } else if (getEntertainment().equals("full band")) {
+      totalCost = 250;
+    }
+    return totalCost;
+  }
+  public int totalEventCost() {
     return 0;
   }
 }
