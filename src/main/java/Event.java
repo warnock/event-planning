@@ -24,4 +24,5 @@ public class Event {
   public String getEntertainment() {
     return mEntertainment;
   }
+
 }
