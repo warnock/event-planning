@@ -2,11 +2,13 @@ public class Event {
   private int mPeople;
   private String mFood;
   private String mBeverage;
+  private String mEntertainment;
 
   public Event(int people, String food, String beverage, String enterainment) {
     mPeople = people;
     mFood = food;
     mBeverage = beverage;
+    mEntertainment = enterainment;
   }
 
   //getter methods
@@ -20,6 +22,6 @@ public class Event {
     return mBeverage;
   }
   public String getEntertainment() {
-    return "";
+    return mEntertainment;
   }
 }
