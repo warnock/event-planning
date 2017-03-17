@@ -33,4 +33,11 @@ public class EventTest {
     assertEquals("music", testEvent.getEntertainment());
   }
 
+  @Test
+  public void peopleCost_costOfindividualPeople_5() {
+    Event testEvent = new Event(1, "entree", "beer", "music");
+    int expected = 5;
+    assertEquals(expected, testEvent.peopleCost());
+  }
+
 }

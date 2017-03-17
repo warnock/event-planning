@@ -24,5 +24,7 @@ public class Event {
   public String getEntertainment() {
     return mEntertainment;
   }
-
+  public int peopleCost(){
+    return 0;
+  }
 }
