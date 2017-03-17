@@ -37,4 +37,7 @@ public class Event {
     }
     return totalCost;
   }
+  public int beverageCost() {
+    return 0;
+  }
 }
