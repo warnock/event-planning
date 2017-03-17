@@ -62,7 +62,7 @@ public class Event {
     return totalCost;
   }
 
-  // public int couponDealDj() {
-  //   return 0;
-  // }
+  public int couponDealDj() {
+    return 0;
+  }
 }

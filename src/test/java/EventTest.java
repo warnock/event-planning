@@ -64,9 +64,9 @@ public class EventTest {
     assertEquals(170, testEvent.totalEventCost());
   }
 
-  // @Test
-  // public void couponDealDj_subrtactsCostOfDjIfMoreThan150Peole_Subracts150() {
-  //   Event testEvent = new Event(1, "entree", "beer", "DJ");
-  //   assertEquals(-150, testEvent.couponDealDj());
-  // }
+  @Test
+  public void couponDealDj_subrtactsCostOfDjIfMoreThan150Peole_Subracts150() {
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
+    assertEquals(-150, testEvent.couponDealDj());
+  }
 }
