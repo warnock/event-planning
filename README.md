@@ -23,7 +23,8 @@ Clone this repository:
 |Application will recognize a food property within the new Event class|"entree"|"entree"|
 |Application will recognize a beverages property within the new Event class|"beer"|"beer"|
 |Application will recognize an entertainment property within the new Event class|"music"|"music"|
-|Application will calculate total cost of new event based on properties chosen|guest:20, entree, beer, music, |total $500|
+|Application will calculate total cost of new event based on properties chosen|guest:20, entree, beer, DJ, |total $500|
+|Application will calculate discounts when coupon code is entered | deal50 | event total - 50|
 
 
 ## Support and contact details

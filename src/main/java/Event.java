@@ -63,6 +63,12 @@ public class Event {
   }
 
   public int couponDealDj() {
-    return 0;
+    int totalCost = 0;
+    if (getsNumberOfPeople() >= 150) {
+    totalCost = totalEventCost() - 150;
+  } else {
+    String noCoupon = "Sorry that is not a coupon";
+  }
+    return totalCost;
   }
 }

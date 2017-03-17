@@ -22,10 +22,18 @@ public class App {
     Event userEvent = new Event(numberOfPeople, userTypeOfFood, userTypeOfBeverage, userTypeOfEntertainment);
 
     System.out.println("Here is your event details:");
-    System.out.println( "----------------------" );
+    System.out.println( "---------------------------------------" );
     System.out.println("Number of gusts: " + userEvent.getsNumberOfPeople());
     System.out.println("Type of food: " + userEvent.getsFood());
     System.out.println("Type of beverage: " + userEvent.getBeverage());
     System.out.println("Type of entertainment: " + userEvent.getEntertainment ());
+    System.out.println( "---------------------------------------" );
+    System.out.println("Your total cost for this event will be: " + userEvent.totalEventCost());
+    System.out.println( "---------------------------------------" );
+
+    System.out.println("If you have a coupon code please enter it now.");
+    String userCoupon = console.readLine();
+
+
   }
 }
