@@ -58,6 +58,8 @@ public class Event {
     return totalCost;
   }
   public int totalEventCost() {
+    // int totalCost = peopleCost() + foodCost() + beverageCost() + entertainmentCost();
+    // return totalCost;
     return 0;
   }
 }
