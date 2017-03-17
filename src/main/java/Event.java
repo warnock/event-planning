@@ -25,6 +25,10 @@ public class Event {
     return mEntertainment;
   }
   public int peopleCost(){
+    int totalcost = 5 * mPeople;
+    return totalcost;
+  }
+  public int foodCost() {
     return 0;
   }
 }
