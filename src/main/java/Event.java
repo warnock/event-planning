@@ -25,10 +25,16 @@ public class Event {
     return mEntertainment;
   }
   public int peopleCost(){
-    int totalcost = 5 * mPeople;
-    return totalcost;
+    int totalCost = 5 * mPeople;
+    return totalCost;
   }
   public int foodCost() {
-    return 0;
+    int totalCost = 0;
+    if (mFood.equals("entree")) {
+      totalCost = 10 * mPeople;
+    } else if (mFood.equals("light snacks")) {
+      totalCost = 5 * mPeople;
+    }
+    return totalCost;
   }
 }
