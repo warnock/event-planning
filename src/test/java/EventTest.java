@@ -24,7 +24,13 @@ public class EventTest {
   @Test
   public void newEvent_getsDrink_beer() {
     Event testEvent = new Event(1, "entree", "beer", "music");
-    assertEquals("beer", testEvent.getDrink());
+    assertEquals("beer", testEvent.getBeverage());
+  }
+
+  @Test
+  public void newEvent_getEntertainment_music() {
+    Event testEvent = new Event(1, "entree", "beer", "music");
+    assertEquals("music", testEvent.getEntertainment());
   }
 
 }
