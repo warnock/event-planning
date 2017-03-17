@@ -25,19 +25,27 @@ public class Event {
     return mEntertainment;
   }
   public int peopleCost(){
-    int totalCost = 5 * mPeople;
+    int totalCost = 5 * getsNumberOfPeople();
     return totalCost;
   }
   public int foodCost() {
     int totalCost = 0;
-    if (mFood.equals("entree")) {
-      totalCost = 10 * mPeople;
-    } else if (mFood.equals("light snacks")) {
-      totalCost = 5 * mPeople;
+    if (getsFood().equals("entree")) {
+      totalCost = 10 * getsNumberOfPeople();
+    } else if (getsFood().equals("light snacks")) {
+      totalCost = 5 * getsNumberOfPeople();
     }
     return totalCost;
   }
   public int beverageCost() {
-    return 0;
+    int totalCost = 0;
+    if (getBeverage().equals("beer")) {
+      totalCost = 5 * getsNumberOfPeople();
+    } else if (getBeverage().equals("wine")) {
+      totalCost = 10 * getsNumberOfPeople();
+    } else if (getBeverage().equals("soda")) {
+      totalCost = 2 * getsNumberOfPeople();
+    }
+    return totalCost;
   }
 }
