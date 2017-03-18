@@ -72,7 +72,7 @@ public class Event {
   }
 
   public int couponDeal50() {
-    // int totalCost = totalEventCost() - 50;
-    return 0;
+    int totalCost = totalEventCost() - 50;
+    return totalCost;
   }
 }
