@@ -69,4 +69,10 @@ public class EventTest {
     Event testEvent = new Event(150, "entree", "beer", "DJ");
     assertEquals(3000, testEvent.couponDealDj());
   }
+
+  @Test
+  public void couponDeal50_subrtacts50FromTotalEventCost_Subracts50() {
+    Event testEvent = new Event(1, "entree", "beer", "DJ");
+    assertEquals(120, testEvent.couponDeal50());
+  }
 }

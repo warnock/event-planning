@@ -24,6 +24,8 @@ public class Event {
   public String getEntertainment() {
     return mEntertainment;
   }
+  //end getter methods
+
   public int peopleCost(){
     int totalCost = 5 * getsNumberOfPeople();
     return totalCost;
@@ -61,12 +63,16 @@ public class Event {
     int totalCost = peopleCost() + foodCost() + beverageCost() + entertainmentCost();
     return totalCost;
   }
-
   public int couponDealDj() {
     int totalCost = 0;
     if (getsNumberOfPeople() >= 150) {
     totalCost = totalEventCost() - 150;
-  } 
+  }
     return totalCost;
+  }
+
+  public int couponDeal50() {
+    // int totalCost = totalEventCost() - 50;
+    return 0;
   }
 }
