@@ -67,10 +67,11 @@ public class Event {
     int totalCost = 0;
     if (getsNumberOfPeople() >= 150) {
     totalCost = totalEventCost() - 150;
+  } else {
+    return totalEventCost();
   }
     return totalCost;
   }
-
   public int couponDeal50() {
     int totalCost = totalEventCost() - 50;
     return totalCost;
