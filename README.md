@@ -22,7 +22,7 @@ Clone this repository:
 |Application will recognize number of guest within the new Event class |guest:1|guests:1|
 |Application will recognize a food property within the new Event class|"entree"|"entree"|
 |Application will recognize a beverages property within the new Event class|"beer"|"beer"|
-|Application will recognize an entertainment property within the new Event class|"music"|"music"|
+|Application will recognize an entertainment property within the new Event class|"music"|"DJ"|
 |Application will calculate total cost of new event based on properties chosen|guest:20, entree, beer, DJ, |total $500|
 |Application will calculate discounts when coupon code is entered | deal50 | event total - 50|
 

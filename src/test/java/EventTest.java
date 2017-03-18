@@ -66,7 +66,7 @@ public class EventTest {
 
   @Test
   public void couponDealDj_subrtactsCostOfDjIfMoreThan150Peole_Subracts150() {
-    Event testEvent = new Event(1, "entree", "beer", "DJ");
-    assertEquals(-150, testEvent.couponDealDj());
+    Event testEvent = new Event(150, "entree", "beer", "DJ");
+    assertEquals(3000, testEvent.couponDealDj());
   }
 }
